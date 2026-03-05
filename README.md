@@ -31,10 +31,3 @@ Run "docker-compose up --build"
 PGS container will run
 fetch_and_store will run
 The API will be available at http://localhost:8000/stocks/aapl
-
-
-
-# 4. Improvements I would make with more time
-- I would add automation so we do not have to run manually and the API response is always the latest stock data
-- Create automated tests so we know if anything has gone wrong
-- Improve the API to have more filtering option and API security (authentication)
