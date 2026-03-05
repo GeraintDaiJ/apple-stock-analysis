@@ -3,8 +3,6 @@
 This project fetches Apple stock data, stores it in a PostgreSQL database, and uses FastAPI API to view the data
 Using Docker, this project can be run from anywhere
 
-
-
 # 1. Architecture
 
 - Data Fetching: Uses `yfinance` to retrieve the last month of Apple stock data with a days interval.
@@ -12,20 +10,6 @@ Using Docker, this project can be run from anywhere
 - API: We use FastAPI to run the `/stocks/aapl` endpoint that returns recent stock data as a JSON object with a count and a title that includes the date range. We can also limit the rows retrieved using ?limit="n"
 - Docker: `docker-compose` creates a container with a copy of the architecture that allows us to run this project elsewhere.
 - Environment Variables: `.env` file stores DB credentials securely (not committed to GitHub) as contains local password.
-
-
-
-# 2. What works and what doesn't
-
-Works:
-- Fetches and stores Apple stock data into PostgreSQL.
-- API endpoint `/stocks/aapl` returns JSON with recent stock data.
-- Docker setup allows this to be run elsewhere.
-
-**Doesn't work:
-- No automation, has to be manually run
-
-
 
 # 3. How to run it using docker
 
